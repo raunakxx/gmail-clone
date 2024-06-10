@@ -1,0 +1,46 @@
+.emailList {
+  flex: 1;
+  overflow: scroll;
+}
+
+.emailList__settings {
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  border-bottom: 1px solid whitesmoke;
+  background-color: white;
+  z-index: 999;
+  padding-right: 10px;
+}
+
+.emailList__sections {
+  position: sticky;
+  top: 0;
+  display: flex;
+  background-color: white;
+  border-bottom: 1px solid whitesmoke;
+  z-index: 999;
+}
+
+.section {
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid transparent;
+  padding: 15px;
+  min-width: 200px;
+  cursor: pointer;
+  transition: background-color 0.3s, border-width 0.3s;
+  color: grey;
+  border-width: 0 !important;
+}
+
+.section--selected {
+  background-color: whitesmoke;
+  border-bottom: 3px solid red;
+}
+
+.section:hover {
+  background-color: whitesmoke;
+  border-bottom-width: 3px;
+}
